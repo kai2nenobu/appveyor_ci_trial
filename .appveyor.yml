@@ -29,7 +29,7 @@ environment:
 # scripts that run after cloning repository
 install:
   - echo Install Something
-  - set | sort
+  - set | sort | findstr /I /B "APPVEYOR CI CONFIGURATION PLATFORM"
 
 #---------------------------------#
 #       build configuration       #
