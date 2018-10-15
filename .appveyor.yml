@@ -34,6 +34,9 @@ install:
 #       build configuration       #
 #---------------------------------#
 
+# to disable automatic builds
+build: off
+
 # scripts to run before build
 before_build:
   - echo Before Build
@@ -50,12 +53,12 @@ after_build:
 before_package:
   - echo Before Package
 
-# to disable automatic builds
-build: off
-
 #---------------------------------#
 #       tests configuration       #
 #---------------------------------#
+
+# to disable automatic tests
+test: off
 
 # scripts to run before tests (working directory and environment changes are persisted from the previous steps such as "before_build")
 before_test:
@@ -68,9 +71,6 @@ test_script:
 # scripts to run after tests
 after_test:
   - After Test
-
-# to disable automatic tests
-test: off
 
 #---------------------------------#
 #      artifacts configuration    #
