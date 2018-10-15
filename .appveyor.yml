@@ -70,7 +70,7 @@ test_script:
 
 # scripts to run after tests
 after_test:
-  - After Test
+  - echo After Test
 
 #---------------------------------#
 #      artifacts configuration    #
