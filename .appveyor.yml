@@ -29,6 +29,7 @@ environment:
 # scripts that run after cloning repository
 install:
   - echo Install Something
+  - set | sort
 
 #---------------------------------#
 #       build configuration       #
