@@ -6,7 +6,18 @@
 version: 0.0.{build}
 
 # branches to build
-#branches:
+-
+  branches:
+    except:
+      - develop
+      - /feature\/.*/
+  skip_non_tags: true
+-
+  branches:
+    only:
+      - develop
+      - /feature\/.*/
+  skip_non_tags: false
 
 #---------------------------------#
 #    environment configuration    #
@@ -112,3 +123,4 @@ on_finish:
 #---------------------------------#
 
 notifications:
+
